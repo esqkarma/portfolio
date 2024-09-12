@@ -60,26 +60,26 @@ class Contact extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Cont(
-                height: htofCont*0.50,
-                  width: wtofCont*0.50,
-                  color: Colors.grey[100],
-                  blurRadius: 0.1,
-                  borderRadius: 20,
-                  borderWidth: 0.1,
-                  child: Expanded(
-                      flex:1,child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          cursorWidth: 1.5,
-                          cursorHeight: 20,
-                          decoration: InputDecoration(
-                          hintText: "Reach out..",
-                            hintStyle: TextStyle(color: Colors.blueGrey[300]),
-                            labelStyle: TextStyle(),
-                            hintTextDirection: TextDirection.ltr,
-                            border: InputBorder.none),maxLines: 100,),
-                      ))),
+              // Cont(
+              //   height: htofCont*0.50,
+              //     width: wtofCont*0.50,
+              //     color: Colors.grey[100],
+              //     blurRadius: 0.1,
+              //     borderRadius: 20,
+              //     borderWidth: 0.1,
+              //     child: Expanded(
+              //         flex:1,child: Padding(
+              //           padding: const EdgeInsets.all(8.0),
+              //           child: TextField(
+              //             cursorWidth: 1.5,
+              //             cursorHeight: 20,
+              //             decoration: InputDecoration(
+              //             hintText: "Reach out..",
+              //               hintStyle: TextStyle(color: Colors.blueGrey[300]),
+              //               labelStyle: TextStyle(),
+              //               hintTextDirection: TextDirection.ltr,
+              //               border: InputBorder.none),maxLines: 100,),
+              //         ))),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: Container(
