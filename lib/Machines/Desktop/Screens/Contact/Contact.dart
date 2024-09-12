@@ -44,55 +44,20 @@ class Contact extends StatelessWidget {
     // }
 
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
 
         //Head Section######################################################
-        SizedBox(height: 50,),
         Texts(data: "Get in touch",size: 17,),
         Texts(data: "Contact Me",fontFamily: 'ArchivoBlack',size: 32,),
-        SizedBox(height: 30,),
         //Mail Section######################################################
         Container(
-          height: htofCont,
+          height: htofCont*0.40,
           width: wtofCont,
           color: Colors.white,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Cont(
-                height: htofCont*0.50,
-                  width: wtofCont*0.50,
-                  color: Colors.grey[100],
-                  blurRadius: 0.1,
-                  borderRadius: 20,
-                  borderWidth: 0.1,
-                  child: Expanded(
-                      flex:1,child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextFormField(
-                          cursorWidth: 1.5,
-                          cursorHeight: 20,
-                          decoration: InputDecoration(
-                          hintText: "Reach out..",
-                            hintStyle: TextStyle(color: Colors.blueGrey[300]),
-                            labelStyle: TextStyle(),
-                            hintTextDirection: TextDirection.ltr,
-                            border: InputBorder.none),maxLines: 100,),
-                      ))),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                    height: htofCont*0.05,
-                    width: wtofCont*0.50,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        ElevatedButton(onPressed: (){}, child: Texts(data: "Send",))
-                      ],
-                    )),
-              ),
 
 
 
@@ -122,6 +87,22 @@ class Contact extends StatelessWidget {
                                     scale: 1.6,),
                               onTap:() async {
                                 await launchURL("https://linkedin.com/in/vipin-karma-s");
+                              },
+                            ),
+
+                            InkWell(
+                              child: Image.asset( "assets/icons8-github-48.png",
+                                scale: 1.6,),
+                              onTap:() async {
+                                await launchURL("https://github.com/esqkarma");
+                              },
+                            ),
+
+                            InkWell(
+                              child: Image.asset( "assets/icons8-instagram-50.png",
+                                scale: 1.6,),
+                              onTap:() async {
+                                await launchURL("https://www.instagram.com/esq.karma/");
                               },
                             ),
 
@@ -176,9 +157,6 @@ class Contact extends StatelessWidget {
                   ),
                 ),
               ),
-
-
-
 
 
 
