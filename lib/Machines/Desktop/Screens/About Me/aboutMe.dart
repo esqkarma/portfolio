@@ -61,33 +61,41 @@ class AboutMe extends StatelessWidget {
                                 blurRadius: 1,
                                 child: ClipRRect(borderRadius: BorderRadius.circular(20),child: Image.asset('assets/profile.jpg',fit: BoxFit.fill,))),
                           ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Cont(
-                                  height: htofCont*0.20,
-                                  width: wtofCont*0.35,
-                                  color: Colors.white,
-                                  borderRadius: 20,
-                                  borderWidth: 0.2,
-                                  blurRadius: 1,
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Texts(data: "Education",fontFamily: 'ArchivoBlack',size: 26,),
-                                      Texts(data: "Bachelor's of computer application",size: 18,)
-                                    ],
-                                  )),
-                              Container(
-                                  height: htofCont*0.50,
-                                  width: wtofCont*0.45,
-                                  color: Colors.white,
+                          Container(
+                            height: height*0.60,
+                            // color: Colors.blue,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Cont(
+                                    height: htofCont*0.20,
+                                    width: wtofCont*0.35,
+                                    color: Colors.white,
+                                    borderRadius: 20,
+                                    borderWidth: 0.2,
+                                    blurRadius: 1,
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Texts(data: "Education",fontFamily: 'ArchivoBlack',size: 26,),
+                                        Texts(data: "Bachelor's of computer application",size: 18,)
+                                      ],
+                                    )),
+                                Container(
+                                    height: htofCont*0.450,
+                                    width: wtofCont*0.45,
+                                    color: Colors.white,
 
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(top: 20),
-                                    child: Text(about,maxLines: 10,textAlign: TextAlign.start,textDirection: TextDirection.ltr,style: TextStyle(fontSize: 15),),
-                                  ))
-                            ],
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 20),
+                                      child: Text(about,maxLines: 10,textAlign: TextAlign.start,textDirection: TextDirection.ltr,style: TextStyle(fontSize: 15),),
+                                    )),
+                                ElevatedButton(onPressed: (){}, child: Row(children: [
+                                  Texts(data: "resume",),
+                                  Icon(Icons.download)
+                                ],))
+                              ],
+                            ),
                           )
                         ],
                       ),
