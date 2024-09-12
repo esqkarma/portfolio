@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:web/Machines/Desktop/desktop.dart';
 import 'package:web/Machines/Mobile/MobileScreen.dart';
 import 'package:web/Machines/Responsive.dart';
 
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SemanticsBinding.instance.ensureSemantics();
   runApp(const MyApp());
 }
 
