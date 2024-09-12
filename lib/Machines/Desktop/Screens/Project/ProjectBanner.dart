@@ -3,6 +3,7 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:web/Util/Container.dart';
+import 'package:web/Util/Functions.dart';
 import 'package:web/Util/Text.dart';
 
 
@@ -63,7 +64,9 @@ class ProjectBanner extends StatelessWidget {
                         child: Image.network("https://th.bing.com/th?id=ODLS.e3af44e9-08e8-4ce9-8151-e19ba73b312d&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"),
                       ),
                       const SizedBox(width: 5,),
-                      Texts(data: "GitHub",color: Colors.black,),
+                     TextButton(onPressed: ()async{
+                       Functions.launchURL("https://github.com/esqkarma/shopit");
+                     }, child:  Texts(data: "GitHub",color: Colors.black,)),
 
                     ],
                   ),

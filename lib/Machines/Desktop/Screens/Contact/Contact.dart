@@ -86,7 +86,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-linkedin-50.png",
                                     scale: 1.6,),
                               onTap:() async {
-                                await launchURL("https://linkedin.com/in/vipin-karma-s");
+                                await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
                               },
                             ),
 
@@ -94,7 +94,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-github-48.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                await launchURL("https://github.com/esqkarma");
+                                await Functions.launchURL("https://github.com/esqkarma");
                               },
                             ),
 
@@ -102,7 +102,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-instagram-50.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                await launchURL("https://www.instagram.com/esq.karma/");
+                                await Functions.launchURL("https://www.instagram.com/esq.karma/");
                               },
                             ),
 
@@ -182,14 +182,6 @@ class Contact extends StatelessWidget {
         SizedBox(height: 30,)
       ],
     );
-  }
-  Future<void> launchURL(String url) async {
-    final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 }
 
