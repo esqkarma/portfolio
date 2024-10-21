@@ -65,7 +65,7 @@ print(proKey);
                ConnectonButtonpressed: ()=>functions.scrollToProjectDesk(ConnectKey),
                AboutonButtonpressed: ()=>functions.scrollToProjectDesk(AboutMeKey),),
              HomeBody(),
-             ProjectDesk(key: projectDeskKey,),
+             // ProjectDesk(key: projectDeskKey,),
               Skills(key: SkillKey,),
               SizedBox(height: 100,),
               AboutMe(key: AboutMeKey,),
