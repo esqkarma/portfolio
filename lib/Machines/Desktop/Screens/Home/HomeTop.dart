@@ -60,16 +60,16 @@ class _HomeTopState extends State<HomeTop> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        TextButton(
-
-                          onPressed: widget.ProjectonButtonpressed,
-                          child: Texts(
-                            data: "Projects",
-                            size: 20,
-                            color: Colors.black87,
-
-                          ),
-                        ),
+                        // TextButton(
+                        //
+                        //   onPressed: widget.ProjectonButtonpressed,
+                        //   child: Texts(
+                        //     data: "Projects",
+                        //     size: 20,
+                        //     color: Colors.black87,
+                        //
+                        //   ),
+                        // ),
                         TextButton(
                           onPressed: widget.SkillonButtonpressed,
                           child: Texts(
