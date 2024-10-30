@@ -40,7 +40,8 @@ class _HomeState extends State<Home> {
     if (context != null) {
       Scrollable.ensureVisible(
         context,
-        duration: Duration(seconds: 1),
+        duration: Duration(seconds: 3),
+
         curve: Curves.easeInOut,
       );
     }
@@ -55,6 +56,7 @@ print(proKey);
       backgroundColor: Colors.white,
         body: SingleChildScrollView(
           controller: _scrollController,
+          physics: ClampingScrollPhysics(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
