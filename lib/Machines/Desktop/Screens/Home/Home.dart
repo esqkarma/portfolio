@@ -40,12 +40,12 @@ class _HomeState extends State<Home> {
     if (context != null) {
       Scrollable.ensureVisible(
         context,
-        duration: Duration(seconds: 3),
-
+        duration: const Duration(seconds: 3),
         curve: Curves.easeInOut,
       );
     }
   }
+
   Keys keys = Keys();
   @override
   Widget build(BuildContext context) {
@@ -63,9 +63,9 @@ print(proKey);
              children: [
              HomeTop(key: homeKey,
               ProjectonButtonpressed:()=>scrollToSection(proKey!) ,
-             SkillonButtonpressed: ()=>functions.scrollToProjectDesk(SkillKey),
-               ConnectonButtonpressed: ()=>functions.scrollToProjectDesk(ConnectKey),
-               AboutonButtonpressed: ()=>functions.scrollToProjectDesk(AboutMeKey),),
+             SkillonButtonpressed: ()=>scrollToSection(SkillKey),
+               ConnectonButtonpressed: ()=>scrollToSection(ConnectKey),
+               AboutonButtonpressed: ()=>scrollToSection(AboutMeKey),),
              HomeBody(),
              // ProjectDesk(key: projectDeskKey,),
               Skills(key: SkillKey,),
