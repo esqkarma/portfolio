@@ -1,14 +1,20 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 import '../../../../Util/Container.dart';
 import '../../../../Util/Text.dart';
+import 'dart:html' as html;
 import 'Skills.dart';
 
-class AboutMe extends StatelessWidget {
+class AboutMe extends StatefulWidget {
   const AboutMe({super.key});
 
+  @override
+  State<AboutMe> createState() => _AboutMeState();
+}
+
+class _AboutMeState extends State<AboutMe> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -90,7 +96,9 @@ class AboutMe extends StatelessWidget {
                                       padding: const EdgeInsets.only(top: 20),
                                       child: Text(about,maxLines: 10,textAlign: TextAlign.start,textDirection: TextDirection.ltr,style: TextStyle(fontSize: 15),),
                                     )),
-                                ElevatedButton(onPressed: (){}, child: Row(children: [
+                                ElevatedButton(onPressed: (){
+                                 downloadFile("assets/Vipin- Karma-resume.pdf");
+                                }, child: Row(children: [
                                   Texts(data: "resume",),
                                   Icon(Icons.download)
                                 ],))
@@ -110,5 +118,11 @@ class AboutMe extends StatelessWidget {
         SizedBox(height: 30,)
       ],
     );
+
+  }
+  void downloadFile(String url) {
+    html.AnchorElement anchorElement =  new html.AnchorElement(href: url);
+    anchorElement.download = url;
+    anchorElement.click();
   }
 }

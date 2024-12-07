@@ -24,8 +24,6 @@ Skills({Key? key}) : super(key: key);
             children: [
           Padding(
             padding: const EdgeInsets.only(right: 150,top: 50),
-            child: IconButton(onPressed: (){}
-            , icon: Icon(Icons.downhill_skiing_outlined,size: 36,)),
           )
         ],),),
         Row(
