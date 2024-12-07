@@ -97,7 +97,7 @@ class _AboutMeState extends State<AboutMe> {
                                       child: Text(about,maxLines: 10,textAlign: TextAlign.start,textDirection: TextDirection.ltr,style: TextStyle(fontSize: 15),),
                                     )),
                                 ElevatedButton(onPressed: (){
-                                 downloadFile("assets/Vipin- Karma-resume.pdf");
+                                 downloadFile("Vipin- Karma-resume.pdf");
                                 }, child: Row(children: [
                                   Texts(data: "resume",),
                                   Icon(Icons.download)
