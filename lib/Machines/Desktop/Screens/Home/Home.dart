@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
     if (context != null) {
       Scrollable.ensureVisible(
         context,
-        duration: const Duration(seconds: 3),
+        duration: const Duration(milliseconds: 900),
         curve: Curves.easeInOut,
       );
     }
@@ -54,29 +54,29 @@ GlobalKey<State<StatefulWidget>>? proKey = keys.getKey();
 print(proKey);
     return Scaffold(
       backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          controller: _scrollController,
-          physics: ClampingScrollPhysics(),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-             children: [
-             HomeTop(key: homeKey,
-              ProjectonButtonpressed:()=>scrollToSection(proKey!) ,
-             SkillonButtonpressed: ()=>scrollToSection(SkillKey),
-               ConnectonButtonpressed: ()=>scrollToSection(ConnectKey),
-               AboutonButtonpressed: ()=>scrollToSection(AboutMeKey),),
-             HomeBody(),
-             // ProjectDesk(key: projectDeskKey,),
-              Skills(key: SkillKey,),
-              SizedBox(height: 100,),
-              AboutMe(key: AboutMeKey,),
-            Contact(homeKey: homeKey,key: ConnectKey)
+        body: ListView(
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                HomeTop(key: homeKey,
+                  ProjectonButtonpressed:()=>scrollToSection(proKey!) ,
+                  SkillonButtonpressed: ()=>scrollToSection(SkillKey),
+                  ConnectonButtonpressed: ()=>scrollToSection(ConnectKey),
+                  AboutonButtonpressed: ()=>scrollToSection(AboutMeKey),),
+                HomeBody(),
+                // ProjectDesk(key: projectDeskKey,),
+                Skills(key: SkillKey,),
+                SizedBox(height: 100,),
+                AboutMe(key: AboutMeKey,),
+                Contact(homeKey: homeKey,key: ConnectKey)
 
 
 
-            ],
-          ),
-        ));
+              ],
+            )
+          ],
+        ),);
   }
 }
