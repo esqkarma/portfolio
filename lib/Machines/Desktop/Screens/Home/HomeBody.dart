@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 import '../../../../Util/Text.dart';
 
@@ -45,7 +44,7 @@ class HomeBody extends StatelessWidget {
                           data: "Hey,",
                           fontFamily: 'FS Ostro Display VF Regular',
                           color: Colors.purple,
-                          size: 36,
+                          size: 50,
                           maxline: 1,
                         ),
                       ),
@@ -58,7 +57,7 @@ class HomeBody extends StatelessWidget {
                           fontFamily: 'ArchivoBlack',
                           color: Colors.grey[350],
                           size: 46,
-                          maxline: 2,
+                          maxline: 1,
                         ),
                       ),
                     ),
