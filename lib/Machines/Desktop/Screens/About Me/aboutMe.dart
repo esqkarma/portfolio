@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../Util/Container.dart';
 import '../../../../Util/Text.dart';
-import 'Skills.dart';
 
 class AboutMe extends StatefulWidget {
   const AboutMe({super.key});

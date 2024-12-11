@@ -1,15 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:web/Util/Functions.dart';
 import '../../../../Util/Container.dart';
 import '../../../../Util/Text.dart';
-import 'package:url_launcher/link.dart';
 
 class Contact_Mob extends StatelessWidget {
   Contact_Mob({Key? key,}) : super(key: key);
-  Functions functions = Functions();
+  // Functions functions = Functions();
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +85,7 @@ class Contact_Mob extends StatelessWidget {
                                 child: Image.asset( "assets/icons8-linkedin-50.png",
                                   scale: 1.6,),
                                 onTap:() async {
-                                  await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
+                                  // await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
                                 },
                               ),
 
@@ -97,7 +93,7 @@ class Contact_Mob extends StatelessWidget {
                                 child: Image.asset( "assets/icons8-github-48.png",
                                   scale: 1.6,),
                                 onTap:() async {
-                                  await Functions.launchURL("https://github.com/esqkarma");
+                                  // await Functions.launchURL("https://github.com/esqkarma");
                                 },
                               ),
 
@@ -105,7 +101,7 @@ class Contact_Mob extends StatelessWidget {
                                 child: Image.asset( "assets/icons8-instagram-50.png",
                                   scale: 1.6,),
                                 onTap:() async {
-                                  await Functions.launchURL("https://www.instagram.com/esq.karma/");
+                                  // await Functions.launchURL("https://www.instagram.com/esq.karma/");
                                 },
                               ),
 

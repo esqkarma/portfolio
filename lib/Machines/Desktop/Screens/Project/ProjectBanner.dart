@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:web/Util/Container.dart';
-import 'package:web/Util/Functions.dart';
 import 'package:web/Util/Text.dart';
 
 
@@ -62,7 +61,7 @@ class ProjectBanner extends StatelessWidget {
                       ),
                       const SizedBox(width: 5,),
                      TextButton(onPressed: ()async{
-                       Functions.launchURL("https://github.com/esqkarma/shopit");
+                       // Functions.launchURL("https://github.com/esqkarma/shopit");
                      }, child:  Texts(data: "GitHub",color: Colors.black,)),
 
                     ],

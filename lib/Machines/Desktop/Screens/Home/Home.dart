@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
   final GlobalKey SkillKey = GlobalKey();
   final GlobalKey ConnectKey = GlobalKey();
   final GlobalKey AboutMeKey = GlobalKey();
-  Functions functions = Functions();
+  // Functions functions = Functions();
 
   @override
   void dispose() {

@@ -1,16 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:web/Util/Functions.dart';
 import '../../../../Util/Container.dart';
 import '../../../../Util/Text.dart';
-import 'package:url_launcher/link.dart';
 
 class Contact extends StatelessWidget {
   GlobalKey homeKey ;
    Contact({Key? key, required this.homeKey}) : super(key: key);
-   Functions functions = Functions();
+   // Functions functions = Functions();
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +82,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-linkedin-50.png",
                                     scale: 1.6,),
                               onTap:() async {
-                                await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
+                                // await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
                               },
                             ),
 
@@ -94,7 +90,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-github-48.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                await Functions.launchURL("https://github.com/esqkarma");
+                                // await Functions.launchURL("https://github.com/esqkarma");
                               },
                             ),
 
@@ -102,7 +98,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-instagram-50.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                await Functions.launchURL("https://www.instagram.com/esq.karma/");
+                                // await Functions.launchURL("https://www.instagram.com/esq.karma/");
                               },
                             ),
 
@@ -173,7 +169,7 @@ class Contact extends StatelessWidget {
              children: [
                GestureDetector(
                  onTap: (){
-                   functions.scrollToProjectDesk(homeKey);
+                   // functions.scrollToProjectDesk(homeKey);
                  },
                    child: Texts(data: "Back to Top",color: Colors.black,fontFamily: 'ArchivoBlack',size: 15,)),
              ],
