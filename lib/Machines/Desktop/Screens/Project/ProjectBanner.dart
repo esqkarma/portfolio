@@ -1,6 +1,3 @@
-
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:web/Util/Container.dart';
 import 'package:web/Util/Functions.dart';
@@ -82,7 +79,7 @@ class ProjectBanner extends StatelessWidget {
                       Texts(data: "Try Now",color: Colors.black,),
                       IconButton(
                         icon:Icon(Icons.arrow_downward,size: 20,color: Colors.grey[400],),
-                        onPressed: ()=>downloadFile("assets"),)
+                        onPressed: (){})
                     ],
                   ),
                 ),
@@ -95,12 +92,6 @@ class ProjectBanner extends StatelessWidget {
 
 
   }
-  //Function for downloading the file
-  downloadFile(url)
-  {
-    AnchorElement anchorElement = AnchorElement(href: url);
-    anchorElement.download = projectName;
-    anchorElement.click();
+  // Function for downloading the file
 
-  }
 }

@@ -54,15 +54,17 @@ class Texts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AutoSizeText(data ?? " ",
-      maxFontSize:36,
+      maxFontSize:60,
       minFontSize: 10,
       maxLines: maxline??3,
-      overflow: TextOverflow.visible,
+      overflow: TextOverflow.ellipsis,
+      textAlign:TextAlign.center,
       style: TextStyle(
           fontWeight: fontweight,
           fontSize: size,
           fontStyle: fontstyle,
           fontFamily: fontFamily,
+
           color: color),);
   }
 }

@@ -1,10 +1,6 @@
-
 import 'package:flutter/material.dart';
-
-
 import '../../../../Util/Container.dart';
 import '../../../../Util/Text.dart';
-import 'dart:html' as html;
 import 'Skills.dart';
 
 class AboutMe extends StatefulWidget {
@@ -97,7 +93,7 @@ class _AboutMeState extends State<AboutMe> {
                                       child: Text(about,maxLines: 10,textAlign: TextAlign.start,textDirection: TextDirection.ltr,style: TextStyle(fontSize: 15),),
                                     )),
                                 ElevatedButton(onPressed: (){
-                                 downloadFile("https://drive.google.com/file/d/1qVdUzy-yn0nUv12aMPe4yqGdBl9Iigma/view?usp=sharing");
+                                 // downloadFile("https://drive.google.com/file/d/1qVdUzy-yn0nUv12aMPe4yqGdBl9Iigma/view?usp=sharing");
                                 }, child: Row(children: [
                                   Texts(data: "resume",),
                                   Icon(Icons.download)
@@ -120,9 +116,9 @@ class _AboutMeState extends State<AboutMe> {
     );
 
   }
-  void downloadFile(String url) {
-    html.AnchorElement anchorElement =  new html.AnchorElement(href: url);
-    anchorElement.download = url;
-    anchorElement.click();
-  }
+  // void downloadFile(String url) {
+  //   html.AnchorElement anchorElement =  new html.AnchorElement(href: url);
+  //   anchorElement.download = url;
+  //   anchorElement.click();
+  // }
 }

@@ -12,59 +12,38 @@ class MobHomeTop extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-            height: height * 0.06,
+          height: width*0.15,
             width: width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10, right: 10),
-                      child: SizedBox(
-                          height: 25,
-                          width: 25,
-                          child: Image.asset(
-                            'assets/dog-paw-print.png',
-                            fit: BoxFit.fill,
-                          )),
-                    ),
-                    Texts(
-                      data: "App Developer",
-                      size: 18,
-                      fontweight: FontWeight.bold,
-                      color: Colors.black26,
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: SizedBox(
+                              height: 25,
+                              width: 25,
+                              child: Image.asset(
+                                'assets/dog_paw_logo.png',
+                                fit: BoxFit.fill,
+                              )),
+                        ),
+                      Texts(
+                        data: " Dev",
+                          fontFamily: 'ArchivoBlack',
+                        color: Colors.grey[400],
+                        size: 20,
+                      )
+                      ],
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: Texts(
-                        data: "projects",
-                        size: 14,
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Texts(
-                        data: "connect",
-                        size: 14,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                )
               ],
             )),
-        Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30, bottom: 20),
-          child: Divider(
-            thickness: 0.5,
-          ),
-        )
+
       ],
     );
     

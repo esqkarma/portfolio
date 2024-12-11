@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web/Machines/Mobile/Screens/Home/mobaboutMe.dart';
-import 'package:web/Machines/Mobile/Screens/Home/mobHomeBottom.dart';
+import 'package:web/Machines/Mobile/Screens/Contact/Contact_Mob.dart';
+import 'package:web/Machines/Mobile/Screens/Skill/Skill_Mob.dart';
 import 'MobHomeBody.dart';
 import 'mobHomeTop.dart';
 
@@ -11,14 +11,15 @@ class MobHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         body: ListView(
           children: [
             Column(
               children: [
                 MobHomeTop(),
                 MobHomeBody(),
-                MobHomeBottom(),
-                MobAboutMe()
+                SkillsMob(),
+                Contact_Mob()
               ],
             ),
           ],
