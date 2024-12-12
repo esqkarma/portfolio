@@ -6,7 +6,7 @@ import '../../../../Util/Text.dart';
 class Contact extends StatelessWidget {
   GlobalKey homeKey ;
    Contact({Key? key, required this.homeKey}) : super(key: key);
-   // Functions functions = Functions();
+   Functions functions = Functions();
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-linkedin-50.png",
                                     scale: 1.6,),
                               onTap:() async {
-                                // await Functions.launchURL("https://linkedin.com/in/vipin-karma-s");
+                                await functions.launchURL("https://linkedin.com/in/vipin-karma-s");
                               },
                             ),
 
@@ -90,7 +90,8 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-github-48.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                // await Functions.launchURL("https://github.com/esqkarma");
+                                print('taped');
+                                await functions.launchURL("https://github.com/esqkarma");
                               },
                             ),
 
@@ -98,7 +99,7 @@ class Contact extends StatelessWidget {
                               child: Image.asset( "assets/icons8-instagram-50.png",
                                 scale: 1.6,),
                               onTap:() async {
-                                // await Functions.launchURL("https://www.instagram.com/esq.karma/");
+                                await functions.launchURL("https://www.instagram.com/esq.karma/");
                               },
                             ),
 
@@ -169,7 +170,7 @@ class Contact extends StatelessWidget {
              children: [
                GestureDetector(
                  onTap: (){
-                   // functions.scrollToProjectDesk(homeKey);
+                   functions.scrollToProjectDesk(homeKey);
                  },
                    child: Texts(data: "Back to Top",color: Colors.black,fontFamily: 'ArchivoBlack',size: 15,)),
              ],
@@ -178,7 +179,11 @@ class Contact extends StatelessWidget {
         SizedBox(height: 30,)
       ],
     );
+
+
+
   }
 }
+
 
 

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:web/Machines/Desktop/Screens/Home/Home.dart';
 import 'package:web/Util/Text.dart';
 
 class ProjectTop_Desk extends StatelessWidget {
