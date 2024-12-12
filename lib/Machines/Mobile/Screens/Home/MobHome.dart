@@ -14,14 +14,10 @@ class MobHome extends StatelessWidget {
         backgroundColor: Colors.white,
         body: ListView(
           children: [
-            Column(
-              children: [
-                MobHomeTop(),
-                MobHomeBody(),
-                SkillsMob(),
-                Contact_Mob()
-              ],
-            ),
+            MobHomeTop(),
+            MobHomeBody(),
+            SkillsMob(),
+            Contact_Mob(),
           ],
         ),
       ),
