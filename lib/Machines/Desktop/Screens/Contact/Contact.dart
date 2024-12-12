@@ -6,7 +6,7 @@ import '../../../../Util/Text.dart';
 class Contact extends StatelessWidget {
   GlobalKey homeKey ;
    Contact({Key? key, required this.homeKey}) : super(key: key);
-   // Functions functions = Functions();
+   Functions functions = Functions();
 
   @override
   Widget build(BuildContext context) {
@@ -169,7 +169,7 @@ class Contact extends StatelessWidget {
              children: [
                GestureDetector(
                  onTap: (){
-                   // functions.scrollToProjectDesk(homeKey);
+                   functions.scrollToProjectDesk(homeKey);
                  },
                    child: Texts(data: "Back to Top",color: Colors.black,fontFamily: 'ArchivoBlack',size: 15,)),
              ],
