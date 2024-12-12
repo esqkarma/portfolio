@@ -46,13 +46,13 @@
   <script>
     const loading = document.createElement('div');
  document.body.appendChild(loading);
- loading.textContent = "Loading Entrypoint...";
+ loading.textContent = "";
  _flutter.loader.load({
    onEntrypointLoaded: async function(engineInitializer) {
-     loading.textContent = "Initializing engine...";
+     loading.textContent = "";
      const appRunner = await engineInitializer.initializeEngine();
 
-     loading.textContent = "Running app...";
+     loading.textContent = "";
      await appRunner.runApp();
    }
  });
