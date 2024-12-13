@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../../../../Util/Text.dart';
 
 class HomeBody extends StatelessWidget {
